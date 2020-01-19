@@ -6,22 +6,22 @@ import './App.css';
 class App extends Component {
   state = {
     userName: [
-      { username: "bello-noah", age: 26 }
+      { username: "bello-noah"}
     ]
   };
 
   eventHandler = () => {
     this.setState({
       userName: [
-        { username: "bello-osagie" }
+        { username: "bello-osagie"}
       ]
     })
   };
 
-  changedEvent = event => {
+  changedEvent = (event) => {
     this.setState({
       userName: [
-        { username: event.target.value }
+        { username: event.target.value, age: 26 }
       ]
     })
   };
