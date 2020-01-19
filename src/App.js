@@ -6,14 +6,14 @@ import './App.css';
 class App extends Component {
   state = {
     userName: [
-      { username: "bello-noah"}
+      { username: "bello-noah", age: 26 }
     ]
   };
 
   eventHandler = () => {
     this.setState({
       userName: [
-        { username: "bello-osagie"}
+        { username: "bello-osagie" }
       ]
     })
   };
